@@ -19,4 +19,6 @@ module com.example.admindesktop {
 
     exports com.example.admindesktop;
     opens com.example.admindesktop.model.value to org.hibernate.orm.core;
+    exports com.example.admindesktop.model.controller;
+    opens com.example.admindesktop.model.controller to javafx.fxml;
 }

@@ -12,8 +12,6 @@ public class UsuarioDAO {
     }
 
     public void salvar(Usuario usuario) {
-        entityManager.getTransaction().begin();
-        entityManager.persist(usuario);
-        entityManager.getTransaction().commit();
+        this.entityManager.persist(usuario);
     }
 }
